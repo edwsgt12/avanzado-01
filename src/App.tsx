@@ -1,23 +1,27 @@
 
 import './App.css'
+import CardDetail from './components/CardDetail'
 
 import Carta from './components/Carta'
 
 function App (){
 
-  const mostrarCarta = (numero:number,pinta:string) =>{
+  const mostrarCard = (numero:number,pinta:string) =>{
     alert(`Carta de numero ${numero} y de pinta${pinta}`)
 
   }
 
   return(
-    <div className="App">  
-  <h1>Hola mundo</h1>
-  <Carta numero={9} pinta={"♣"} mostrarCarta={mostrarCarta}/>
-  <Carta numero={12} pinta={"♥"} mostrarCarta={mostrarCarta}/>
-  <Carta numero={7} pinta={"♦"} mostrarCarta={mostrarCarta}/>
-  <Carta numero={10} pinta={"♠"} mostrarCarta={mostrarCarta}/>
-  </div>
+    <div className="App">
+    <CardDetail
+    ataque={160}
+    nombre="Aullifuego"
+    defensa={100}
+    descripcion="Aullifuego, es un lobo de tipo fuego, que con sus 6 colas y sus rugidos quema todo a su paso"
+    imagen="https://static.wikia.nocookie.net/espokemon/images/b/bb/Growlithe.png/revision/latest/smart/width/250/height/250?cb=20080909112200"
+    tipo= "Fuego"
+    numero={300}/>
+    </div>
   )
 }
 
