@@ -6,7 +6,7 @@ imagen : string;
 nombre : string;
 numero: number;
 tipo : string;
-mostrarCard: (ataque: number,defensa: number, descripcion : string,imagen : string,nombre : string,numero: number,tipo : string) => void
+region?: string;
 };
 
 
